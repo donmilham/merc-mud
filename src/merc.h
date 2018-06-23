@@ -15,7 +15,7 @@
  *  around, comes around.                                                  *
  ***************************************************************************/
 
-
+#define unix
 
 /*
  * Accommodate old non-Ansi compilers.

@@ -1393,6 +1393,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	char_list	= ch;
 	d->connected	= CON_PLAYING;
 
+	// DON: this is where a new character is initialized, equiped and placed
 	if ( ch->level == 0 )
 	{
 	    OBJ_DATA *obj;
