@@ -1225,7 +1225,8 @@ void do_sacrifice( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    send_to_char( "God gives you one gold coin for your sacrifice.\n\r", ch );
+	// DON: TODO: change 'God' to a defined god name
+    send_to_char( "God gives you a cash reward for your sacrifice.\n\r", ch );
     ch->gold += 1;
 
     act( "$n sacrifices $p to God.", ch, obj, NULL, TO_ROOM );

@@ -1,0 +1,4 @@
+TODO:
+- update the Gods e.g. replace God name with defined name
+- add races?
+- add money to each spawned mobile e.g. 0-level random gold amount
