@@ -707,7 +707,7 @@ void load_resets( FILE *fp )
 	    area_last->reset_first	= pReset;
 	if ( area_last->reset_last  != NULL )
 	    area_last->reset_last->next	= pReset;
-	    
+
 	area_last->reset_last	= pReset;
 	pReset->next		= NULL;
 	top_reset++;
@@ -1226,7 +1226,7 @@ void reset_area( AREA_DATA *pArea )
 		last = FALSE;
 		break;
 	    }
-	    
+
 	    obj = create_object( pObjIndex, number_fuzzy( obj_to->level ) );
 	    obj_to_obj( obj, obj_to );
 	    last = TRUE;
@@ -1383,7 +1383,13 @@ CHAR_DATA *create_mobile( MOB_INDEX_DATA *pMobIndex )
 				mob->level * mob->level / 4,
 				mob->level * mob->level );
     mob->hit		= mob->max_hit;
-	    
+
+    // DON: adding random amount of gold to the mob based on level
+    int money_amount = number_range(0, mob->level);
+    if (money_amount > 0) {
+  	  obj_to_char(create_money(money_amount), mob);
+    }
+
     /*
      * Insert in list.
      */

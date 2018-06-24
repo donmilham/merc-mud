@@ -1,4 +1,12 @@
 TODO:
 - update the Gods e.g. replace God name with defined name
 - add races?
-- add money to each spawned mobile e.g. 0-level random gold amount
+- add fishing
+- tweak thirst / hunger system?
+- tweak movement system?
+- add numeric values to damage logs
+- see item stats? identify?
+
+DONE:
+- DON 6/24/2018 : add money to each spawned mobile e.g. 0-level random gold amount
+  - added the code to create_mobile()
