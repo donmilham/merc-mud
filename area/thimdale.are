@@ -1,0 +1,178 @@
+#AREA	{ 1 5} ValcronisZ    Town of ThimbledalePrototype for New Area~
+
+
+
+#HELPS
+0 $~
+
+
+
+#MOBILES
+#4200
+cat~
+an alley cat~
+An alley cat hisses at you.
+~
+The alley cat is half starved and more than a little feral.
+~
+161 0 -200 S
+0 20 10 1d6+4 1d4+0
+10 25
+8 8 1
+#4201
+sparrow~
+the sparrow~
+A sparrow is flapping around on the ground.
+~
+The sparrow looks like it is enjoying life.
+~
+192 0 0 S
+0 20 10 2d6+0 1d3+0
+0 25
+8 8 0
+#4202
+Appentice weaponsmith~
+the appentice weaponsmith~
+An appentice weaponsmith.
+~
+A young appentice weaponsmith, who still has lots to learn.
+~
+2 0 900 S
+23 2 2 1d1+10000 1d8+16
+100000 80000
+8 8 1
+
+#0
+
+
+#OBJECTS
+#4200
+mace~
+a appentice mace~
+You see an appentice crafted mace here.~
+~
+5 64 1|8192
+0 2 3 7
+5 0 5
+E
+mace~
+You see an appentice crafted mace. Imprinted on the side is:
+Hit target with this end.
+~
+A
+18 1
+A
+19 1
+#4201
+dagger~
+a appentice dagger~
+You see an appentice crafted dagger here.~
+~
+5 64 1|8192
+0 2 3 11
+5 0 5
+E
+dagger~
+You see an appentice crafted dagger.  Imprinted on the side is:
+Use the pointy end on target.
+~
+A
+18 1
+A
+19 1
+#4202
+sword~
+a appentice sword~
+You see an appentice crafted sword here.~
+~
+5 64 1|8192
+0 2 3 3
+5 0 5
+E
+sword~
+You see an appentice crafted sword.  Imprinted on the side is:
+Hold handle not pointy end.
+~
+A
+18 1
+A
+19 1
+
+#0
+
+
+#ROOMS
+#4200
+Test Area 1~
+   There is little of note in this area but it seems to be working.
+~
+30 0 1
+D3
+You see a strange portal.
+~
+~
+0 -1 3001
+D1
+You see test area 2.
+~
+~
+0 -1 4201
+S
+#4201
+Test Area 2~
+   There is little of note in this area but it seems to be working.
+~
+30 0 1
+D3
+You see test area 1.
+~
+~
+0 -1 4200
+D1
+You see test area 3.
+~
+~
+0 -1 4202
+S
+#4202
+Test Area 3~
+   There is little of note in this area but it seems to be working.
+~
+30 0 1
+D3
+looks like test area 2.
+~
+~
+0 -1 4201
+S
+
+#0
+
+
+#RESETS
+*
+M 0 4202 1 4200       The weaponsmith
+G 1 4200 100
+G 1 4201 100
+G 1 4202 100
+E 1 3022 100 16            wields a longsword
+*
+M 0 4200 1 4201       The alley Cat
+M 0 4201 1 4202       A sparrow
+*
+S
+
+
+
+#SHOPS
+ 4202	 5  6  7  0  0	 100  70	 0 23	; The Apprentice Weaponsmith
+
+0
+
+
+#SPECIALS
+S
+
+
+
+#$

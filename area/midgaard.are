@@ -1539,7 +1539,7 @@ appearance, and most of the walls are covered by ancient wall paintings
 picturing Gods, Giants and peasants.
    Large steps lead down through the grand temple gate, descending the huge
 mound upon which the temple is built and ends on the temple square below.
-   Equally large steps lead UP through a small door into the ENTRANCE to MUD 
+   Equally large steps lead UP through a small door into the ENTRANCE to MUD
 SCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.
 ~
 30 4|8|1024 0
@@ -1553,6 +1553,11 @@ You see the temple square.
 ~
 ~
 0 -1 3005
+D3
+You see a strange portal.
+~
+~
+0 -1 4200
 D4
 You see the entrance to Mud School.
 ~
@@ -2431,7 +2436,7 @@ S
 Inside the East Gate of Midgaard~
    You are by two small towers that have been built into the city wall and
 connected with a footbridge across the heavy wooden gate.  Main Street leads
-west from here.  South of here is the wall road, but it looks dirty and 
+west from here.  South of here is the wall road, but it looks dirty and
 not too safe.
 ~
 30 0 1
